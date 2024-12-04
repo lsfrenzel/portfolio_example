@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="assets/img/icons/icon-code.svg">
+	<title>Lucas Shimada Frenzel</title>
+
+	<!-- Fontes -->
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru&family=Marcellus&family=Montserrat:wght@100;300;400;500;600;700;800&family=Victor+Mono:wght@100;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- links de estilo -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/about.css">
+	<link rel="stylesheet" href="assets/css/cards.css">
+	<link rel="stylesheet" href="assets/css/slider.css">
+	<link rel="stylesheet" href="assets/css/badges.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+	<header>
+		<div class="menu-container ">
+			<div class="font-2"> <!-- Logotipo -->
+				<img class="i-code" src="assets/img/icons/icon-code.svg">
+				<p>lsfrenzel</p>
+				
+				<p class="underline">_</p>
+			</div>
+			<!-- Este é o menu Sidebar do responsivo -->
+			<div onclick="hideMenu(this)" class="bars">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+		<nav class="menu hide-menu font-5">
+			<a href="#about">SOBRE MIM</a>
+			<a href="#skills">HABILIDADES</a>
+			<a href="#projects">PROJETOS</a>
+			<a href="#badges">CERTIFICADOS</a>
+			<a href="#contact" class="btn-green contact">CONTATO</a>
+		</nav>
+	</header>
+	<main>
+		<section id="about" class="about gradient-1">
+			<article>
+				<h1 class="font-5 title">INSTRUTOR DE DEV</h1>
+				<h2 class="font-4">Olá!
+					<img class="emoji-hand" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f44b.gif" width="100px" height="50px"
+						alt="Emoji de uma mão acenando"> Eu sou
+				</h2>
+				<h3 class="font-4 gradient-2">Lucas Shimada Frenzel</h3>
+				<p class="font-4 txt fw-300">Sou Mestre em Ciências pela Universidade de São Paulo, especialista em Educação Profissional e Tecnológica pelo IFES e tenho MBA em Administração Industrial pela POLI/USP. 
+                    Atualmente, atuo como Instrutor de Formação Profissional pelo Senai "Morvan Figueiredo" no curso técnico de Desenvolvimento de Sistemas, na parte de front e back-end, além de lecionar cursos de Cloud Computing da Google e AWS.
+                    Apaixonado por Ciência e Tecnologia, o que me move a sempre buscar novos conhecimentos, perspectivas e pessoas. 
+                    O universo nos aguarda para ser explorado, afinal, toda ciência é humana:)</p>
+				<div class="btn-grandient font-4">
+					<a href="" target="_blank" class="cv font-5 gradient-3">CURRICULO
+						<i class="fa-regular fa-file-pdf"></i>
+					</a>
+				</div>
+			</article>
+			<div class="flip">
+				<img src="assets/img/perfil.jpg" alt="Foto de perfil do Lucas">
+			</div>
+		</section>
+		<section id="skills">
+			<div>
+				<h1 class="font-5 title title-section fw-600">HABILIDADES</h1>
+			</div>
+			<div class="container-cards container-cards-skills">
+				<!-- Aqui vão ser criados os cards de forma dinâmica com JavaScript utilizando o arquivo cards.js e os dados em JSON no arquivo cards.json -->
+			</div>
+		</section>
+		<section>
+			<div>
+				<h1 class="font-5 title title-section fw-600">FERRAMENTAS</h1>
+			</div>
+			<div class="carousel">
+				<div class="slider">
+					<!-- Aqui vão ser criados os cards de forma dinâmica com JavaScript utilizando o arquivo cards.js e os dados em JSON no arquivo cards.json -->
+				</div>
+			</div>
+			<div class="slider-buttons">
+				<button id="prev-btn" class="btn-slider"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
+				<button id="next-btn" class="btn-slider"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
+			</div>
+		</section>
+		<section id="projects">
+			<div>
+				<h1 class="font-5 title title-section fw-600">PROJETOS</h1>
+			</div>
+			<div class="container-cards container-cards-projects">
+				<!-- Aqui vão ser criados os cards de forma dinâmica com JavaScript utilizando o arquivo cards.js -->
+				<!-- Os dados estão em "projects" no JSON do arquivo cards.json -->
+			</div>
+		</section>
+		<section id="badges">
+			<h1 class="font-5 title title-section fw-600">CERTIFICADOS</h1>
+			<div class="container-cards-badges">
+				<!-- Aqui vão ser criados os cards de forma dinâmica com JavaScript utilizando o arquivo cards.js -->
+				<!-- Os dados estão em "badges" no JSON no arquivo cards.json  -->
+			</div>
+		</section>
+		<section id="contact">
+			<h1 class="font-5 title title-section fw-600">CONTATO</h1>
+			<nav>
+				<a href="mailto:lucasfrenzel8@gmail.com" target="_blank">
+					<i class="fa-regular fa-envelope fa-2xl"></i>
+				</a>
+				<a href="https://wa.me/551194365-2488" target="_blank">
+					<i class="fa-brands fa-whatsapp fa-2xl"></i>
+				</a>
+				<a href="https://www.instagram.com/lsfrenzel/" target="_blank">
+					<i class="fa-brands fa-instagram fa-2xl"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/lucas-shimada-frenzel-9a748533/" target="_blank">
+					<i class="fa-brands fa-linkedin fa-2xl"></i>
+				</a>
+				<a href="https://github.com/lsfrenzel" target="_blank">
+					<i class="fa-brands fa-github fa-2xl"></i>
+				</a>
+			</nav>
+		</section>
+	</main>
+	<footer class="container font-3">
+		&copy; 2024 Todos os direitos reservados |
+		<span>
+			Feito com HTML, CSS e JavaScript :)
+			<i class="fa-solid fa-heart fa-bounce"></i>
+			by Lucas Shimada Frenzel
+		</span>
+	</footer>
+
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/sideBar.js"></script>
+	<script src="assets/js/cards.js"></script>
+	<script src="assets/js/slider.js"></script>
+</body>
+
+</html>
